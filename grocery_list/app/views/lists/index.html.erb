@@ -1,0 +1,16 @@
+<h1>Grocery List</h1>
+
+<ul>
+<%= @lists.each do |list| %>
+  <li>
+    <%= link_to list.item, lists_path(list) %>
+    <%= list.brand %>
+    <%= list.store %>
+    $<%= list.price %>
+  </li>
+
+
+<% end %>
+</ul>
+
+<%= link_to "Add a new Item" %>
