@@ -1,6 +1,5 @@
 class ListsController < ApplicationController
 
-
   def index
     @lists = List.all
   end
@@ -28,7 +27,7 @@ class ListsController < ApplicationController
 
   def update
     @list = List.find(params[:id])
-    if @list.update_attributes(cat_params)
+    if @list.update_attributes(list_params)
       redirect_to lists_path
     else
       render :edit

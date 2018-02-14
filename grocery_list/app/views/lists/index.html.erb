@@ -1,16 +1,20 @@
 <h1>Grocery List</h1>
 
-<ul>
-<%= @lists.each do |list| %>
-  <li>
-    <%= link_to list.item, lists_path(list) %>
-    <%= list.brand %>
-    <%= list.store %>
-    $<%= list.price %>
-  </li>
-
-
+<%= link_to "Add a new Item", new_list_path %>
+<br />
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Brand</th>
+    <th>Grocery Store</th>
+    <th>Price</th>
+  </tr>
+<% @lists.each do |list| %>
+  <tr>
+    <td><%= link_to list.item, list_path(list) %></td>
+    <td><%= list.brand %></td>
+    <td><%= list.store %></td>
+    <td>$<%= list.price %></td>
+  </tr>
 <% end %>
-</ul>
-
-<%= link_to "Add a new Item" %>
+</table>

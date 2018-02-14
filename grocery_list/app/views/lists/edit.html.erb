@@ -1,0 +1,16 @@
+
+<div class="form">
+  <h1 class="title">Edit your Item</h1>
+  <%= form_for @list do |f| %>
+  <%= f.text_field :item, placeholder: "Item", required: true, :class => 'form' %>
+
+  <%= f.text_field :brand, placeholder: "Brand", required: true, :class => 'form' %>
+
+  <%= f.text_field :store, placeholder: "Store", required: true, :class => 'form' %>
+
+  <%= f.text_field :price, placeholder: "Price", :class => 'form' %>
+
+  <%= f.submit "Edit Item", :class => 'button' %>
+
+  <% end %>
+</div>
