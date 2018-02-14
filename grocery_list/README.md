@@ -6,19 +6,22 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+-This app is using Ruby Version 2.4.1
 
-* System dependencies
+# MVP
+-A grocery item tracker. It's like a to-do list but with groceries.
 
-* Configuration
+# POST-MVP
+-Add a model for a grocery list and use data as items in list
+-Create user authentication for personal use
+-Add the prices up for a total cost of items.
 
-* Database creation
+# Functional Components
+|Component|Priority|EST Time|Time Invested|Actual Time|
+|---------|:------:|-------:|------------:|----------:|
+|CRUD      | H     |  4hrs  |   3hrs      |  3.5 hrs  |
+| Add Prices| M   |   3hrs |   1hr       |   N/A      |
+| Incorporate Second Model | H | 3hrs | 2hrs | N/A    |
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Issues and Resolutions
+I wasn't able to incorporate a second model for this app. I should read instructions better.

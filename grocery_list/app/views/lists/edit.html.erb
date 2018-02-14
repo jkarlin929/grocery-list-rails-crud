@@ -1,7 +1,8 @@
 
-<div class="form">
+<div>
   <h1 class="title">Edit your Item</h1>
   <%= form_for @list do |f| %>
+
   <%= f.text_field :item, placeholder: "Item", required: true, :class => 'form' %>
 
   <%= f.text_field :brand, placeholder: "Brand", required: true, :class => 'form' %>
@@ -12,5 +13,10 @@
 
   <%= f.submit "Edit Item", :class => 'button' %>
 
+  <div class="linkHome">
+    <%= link_to "| Cancel |", list_path %>
+  </div>
+
   <% end %>
+
 </div>

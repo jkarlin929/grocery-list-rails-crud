@@ -1,6 +1,6 @@
-<h1>Grocery List</h1>
+<h1 class="titleHome">Grocery Tracker</h1>
 
-<%= link_to "Add a new Item", new_list_path %>
+<%= link_to "Add Item to List", new_list_path %>
 <br />
 <table>
   <tr>
@@ -16,5 +16,6 @@
     <td><%= list.store %></td>
     <td>$<%= list.price %></td>
   </tr>
+
 <% end %>
 </table>
