@@ -9015,3 +9015,44 @@ Processing by ListsController#show as HTML
 Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-06 13:41:38 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.6ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 341ms (Views: 325.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/lists/new" for 127.0.0.1 at 2018-03-06 13:41:45 -0500
+Processing by ListsController#new as HTML
+  Rendering lists/new.html.erb within layouts/application
+  Rendered lists/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 48ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-03-06 13:41:47 -0500
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lists/2" for 127.0.0.1 at 2018-03-06 13:41:52 -0500
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lists/show.html.erb within layouts/application
+  Rendered lists/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lists" for 127.0.0.1 at 2018-03-06 13:41:57 -0500
+Processing by ListsController#index as HTML
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  Rendered lists/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 0.3ms)
+
+
